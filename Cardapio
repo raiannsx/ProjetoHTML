@@ -24,8 +24,10 @@
             <div class="card-content">
                 <h1>Salada Verde</h1>
                 <span>R$12,00</span>
-                <input type="checkbox" name="pedido[]" value="Salada Verde - R$12,00">
-            
+                <label>
+                    <input type="checkbox" name="pedido[]" value="Salada Verde - R$12,00">
+                    Adicionar ao Pedido
+                </label>
             </div>
         </div>
         <div class="card">
@@ -33,8 +35,10 @@
             <div class="card-content">
                 <h1>Batatas Fritas</h1>
                 <span>R$10,00</span>
-                <input type="checkbox" name="pedido[]" value="Batatas Fritas - R$10,00">
-       
+                <label>
+                    <input type="checkbox" name="pedido[]" value="Batatas Fritas - R$10,00">
+                    Adicionar ao Pedido
+                </label>
             </div>
         </div>
         <div class="card">
@@ -42,7 +46,10 @@
             <div class="card-content">
                 <h1>Petiscos</h1>
                 <span>R$52,00</span>
-                <input type="checkbox" name="pedido[]" value="Petiscos - R$52,00">
+                <label>
+                    <input type="checkbox" name="pedido[]" value="Petiscos - R$52,00">
+                    Adicionar ao Pedido
+                </label>
             </div>
         </div>
         <div class="card">
@@ -50,10 +57,12 @@
             <div class="card-content">
                 <h1>Bolinho de Bacalhau</h1>
                 <span>R$12,00</span>
-                <input type="checkbox" name="pedido[]" value="Bolinho de bacalhau - R$12,00">
+                <label>
+                    <input type="checkbox" name="pedido[]" value="Bolinho de Bacalhau - R$12,00">
+                    Adicionar ao Pedido
+                </label>
             </div>
         </div>
-      
     </div>
 </div>
 
@@ -330,9 +339,11 @@
         
      </div>
         
-    <input type="submit" value="Finalizar Pedido">       
+           
     </form>
-    
+
+    <input type="submit" value="Finalizar Pedido">
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Seleciona todos os botões de adicionar ao pedido
@@ -347,12 +358,16 @@
             });
         });
     
-        function toggleOptions(optionsId, icon) {
-            const optionsDiv = document.getElementById(optionsId);
-            optionsDiv.classList.toggle('hidden');
-            const expanded = optionsDiv.classList.contains('hidden');
-            icon.setAttribute('aria-expanded', !expanded);
-        }
+       function toggleOptions(optionsId, icon) {
+    const optionsDiv = document.getElementById(optionsId);
+    optionsDiv.classList.toggle('hidden');
+    if (optionsDiv.classList.contains('hidden')) {
+        icon.setAttribute('aria-expanded', 'false');
+    } else {
+        icon.setAttribute('aria-expanded', 'true');
+    }
+}
+
     
         function validateForm() {
             // Seleciona todos os checkboxes marcados
