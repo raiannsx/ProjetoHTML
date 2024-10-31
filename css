@@ -82,15 +82,6 @@ h2 {
     margin-bottom: 8px; /* Espaço abaixo do preço. */
 }
 
-.card button {
-    background-color: #2192FF; /* Cor de fundo do botão. */
-    border: none; /* Remove bordas padrão do botão. */
-    padding: 8px; /* Espaço interno dentro do botão. */
-    color: white; /* Cor do texto no botão. */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável. */
-    border-radius: 5px; /* Cantos arredondados do botão. */
-    transition: background-color 0.2s, transform 0.2s; /* Animações para o botão. */
-}
 
 .card button:hover {
     background-color: #1a75d4; /* Muda a cor de fundo ao passar o mouse sobre o botão. */
@@ -104,3 +95,30 @@ label {
     margin-bottom: 8px; /* Espaço abaixo do label */
     display: block; /* Faz o label ocupar toda a largura disponível */
 }
+
+input[type="checkbox"] {
+    accent-color: #1a75d4; /* Muda a cor do checkbox */
+    width: 20px; /* Ajusta a largura */
+    height: 20px; /* Ajusta a altura */
+}
+
+button.fazer-pedido {
+    background-color: #1a75d4; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 12px 20px; /* Espaçamento interno (vertical e horizontal) */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.2s; /* Animações para hover */
+}
+
+button.fazer-pedido:hover {
+    background-color: greenyellow; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão levemente */
+}
+
+button.fazer-pedido:active {
+    transform: scale(0.95); /* Diminui um pouco o botão ao clicar */
+}
+
