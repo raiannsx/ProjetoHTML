@@ -1,0 +1,107 @@
+/* styles/style2.css */
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #9ACD32;
+    
+}
+
+/* Estilos das seções */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Estilo da lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* Botões */
+.botoes-acao {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-confirmar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar {
+    background-color: rgb(223, 20, 20); /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+}
+
+.btn-voltar:hover {
+    background-color: rgb(255, 0, 0); /* Vermelho mais intenso ao passar o mouse */
+}
+
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s; /* Suaviza a transição de cor */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Cor ao passar o mouse */
+}
+
+footer a:active {
+    color: #FF6F61; /* Cor ao clicar */
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .botoes-acao {
+        flex-direction: column;
+    }
+
+    .btn-confirmar, .btn-voltar {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
